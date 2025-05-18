@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-</div>scale=1.0">
+  </div>  <meta name="description" content="About Me - Andra's Personal Page">
+    <meta name="keywords" content="Andra, Programmer, Web Development, Projects, Skills">
+    <meta name="author" content="Andra">
+    <link rel="icon" href="/asset/ogo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --primary-color: #0ea5e9;
+            --secondary-color: #0369a1;
+            --bg-color: #020617;
+            --text-color: #f8fafc;
+            --card-bg: rgba(2, 6, 23, 0.8);
+            --glass-effect: rgba(255, 255, 255, 0.02);
+            --accent-glow: 0 0 20px rgba(14, 165, 233, 0.5);
+        }
+                
+        html {
+            scroll-behavior: smooth;
+        }
+                
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #020617 0%, #0c4a6e 100%);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 5.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0ea5e9, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: left;
+            margin-bottom: 60px;
+            filter: drop-shadow(var(--accent-glow));
+        }
+
+        .profile-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 50px 0;
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            transform: translateZ(0);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .profile-section:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: var(--accent-glow);
+        }
+
+        h2 {
+            font-size: 3em;
+            font-weight: 800;
+            background: linear-gradient(45deg, #0ea5e9, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 35px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .profile-section:hover h2::after {
+            transform: scaleX(1);
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            list-style: none;
+        }
+
+        li {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(15px);
+        }
+
+        li:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: var(--primary-color);
+            box-shadow: var(--accent-glow);
+        }
+
+        li i {
+            font-size: 2.2em;
+            color: #0ea5e9;
+            filter: drop-shadow(var(--accent-glow));
+            transition: all 0.4s ease;
+        }
+
+        li:hover i {
+            transform: scale(1.2) rotate(5deg);
+            color: #38bdf8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+            h1 { font-size: 3.5em; }
+            h2 { font-size: 2.5em; }
+            ul { grid-template-columns: 1fr; }
+            li { padding: 25px; }
+        }
+    </style>
+</head>
+
+    <body>
+        <div class="container">
+            <h1>About Me</h1>
+            
+            <div class="profile-section">
+                <h2>Hello World! 👋</h2>
+                <p style="font-size: 1.2em; line-height: 1.6; font-weight: bold;"></p>
+                    I'm a passionate programmer from Indonesia, crafting digital experiences through code. 
+                    Currently exploring the endless possibilities of technology and turning ideas into reality.
+                </p>
+            </div>
+
+            <div class="profile-section">
+            <h2>My Skills 🚀</h2>
+            <ul>
+            <li><i class="fab fa-html5"></i> HTML5/CSS3</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-node"></i> Node.js</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-microsoft"></i> C#</li>
+            </ul>
+        </div>
+
+        <div class="profile-section">
+            <h2>My Projects 💻</h2>
+            <ul class="projects-grid">
+            <li class="project-card">
+                <img src="/asset/Screenshot 2025-05-14 172456.png" alt="Project 1">
+                <div class="project-info">
+                <h3>Project Alpha</h3>
+                <p>Web Application</p>
+                </div>
+            </li>
+            <li class="project-card">
+                <img src="asset/Screenshot 2025-03-24 210929.png" alt="Project 2">
+                <div class="project-info">
+                <h3>Project Beta</h3>
+                <p>Mobile App</p>
+                </div>
+            </li>
+            <li class="project-card">
+                <img src="asset/ogo.png" alt="Project 3">
+                <div class="project-info">
+                <h3>Project Gamma</h3>
+                <p>Cloud Solution</p>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+        <div class="profile-section">
+            <h2>What I Love ❤️</h2>
+            <ul>
+            <li><i class="fas fa-code"></i> Building amazing apps</li>
+            <li><i class="fas fa-gamepad"></i> Gaming</li>
+            <li><i class="fas fa-headphones"></i> Music</li>
+            <li><i class="fas fa-coffee"></i> Coffee</li>
+            </ul>
+        </div>
+
+        <div class="profile-section">
+            <h2>Contact Me 📫</h2>
+            <ul>
+            <li>
+                <i class="fas fa-envelope"></i>
+                Email: andra@example.com
+            </li>
+            <li>
+                <i class="fas fa-phone"></i>
+                Phone: +62 123 456 789
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                Location: Jakarta, Indonesia
+            </li>
+            </ul>
+        </div>
+
+        <style>
+            .projects-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            }
+            .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            }
+            .project-card:hover {
+            transform: translateY(-10px);
+            }
+            .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            }
+            .project-info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(5px);
+            }
+            .project-info h3 {
+            color: #fff;
+            margin: 0;
+            }
+            .project-info p {
+            color: #aaa;
+            margin: 5px 0 0;
+            }
+        </style>
+        </div>
+    
+        
+
+    <script>
+        // Modern animations and interactions
+        document.querySelectorAll('.contact-links a').forEach(link => {
+            link.addEventListener('mouseover', e => {
+                e.target.style.transform = 'scale(1.1) rotate(5deg)';
+            });
+            link.addEventListener('mouseout', e => {
+                e.target.style.transform = 'scale(1) rotate(0)';
+            });
+        });
+    </script>
+
+    <footer style="
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(to right, var(--bg-color), var(--secondary-color));
+        color: var(--text-color);
+        margin-top: 50px;
+        border-top: 1px solid rgba(255,255,255,0.1);">
+<div class="footer-content"></div>
+    <p>&copy; 2025 Andra. All rights reserved.</p>
+    
+    <div class="social-icons" style="margin-top: 20px;"></div></div>
+        <a href="https://www.instagram.com/sebut_saja_al</a>if" target="_blank" aria-label="Instagram" 
+            class="social-link" style="margin: 0 15px; color: #fff; font-size: 24px; text-decoration: none; 
+            transition: all 0.3s ease; display: inline-block;">
+             <i class="fab fa-tiktok" style="filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));"></i>
+        </a>
+        <a href="https://www.instagram.com/sebut_saja_al</a>if" target="_blank" aria-label="Instagram" 
+            class="social-link" style="margin: 0 15px; color: #fff; font-size: 24px; text-decoration: none; 
+            transition: all 0.3s ease; display: inline-block;">
+             <i class="fab fa-instagram" style="filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));"></i>
+        </a>
+        <a href="https://discord.gg/cmKT8A7U" target="_blank" aria-label="Discord"
+            class="social-link" style="margin: 0 15px; color: #fff; font-size: 24px; text-decoration: none;
+            transition: all 0.3s ease; display: inline-block;">
+             <i class="fab fa-discord" style="filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));"></i>
+        </a>
+        <style>
+        .social-link:hover {
+             transform: translateY(-5px) scale(1.1);
+             color: var(--primary-color);
+        }
+        .social-link:hover i {
+             filter: drop-shadow(0 0 15px var(--primary-color));
+        }
+        </style>
+        </div>
+        </div>
+
+    
+</body>
+</html>
